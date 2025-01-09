@@ -10,8 +10,8 @@ app.use(express.json()); //allows us to accept JSON data in the req.body
 app.use("api/products", productRoutes);
 
 console.log(process.env.MONGO_URI);
-app.listen(5000, () =>{
+app.listen(8000, () =>{
     connectDB();
-    console.log('Server started at http://localhost:5000');
+    console.log('Server started at http://localhost:8000');
 })
 
