@@ -1,6 +1,5 @@
 import { Box, Button, Container, Heading, Input, VStack } from "@chakra-ui/react";
 import { useState } from "react";
-import { useProductStore } from "../store/product";
 
 
 const CreatePage = () => {
@@ -9,12 +8,8 @@ const CreatePage = () => {
 		price: "",
 		image: "",
 	});
-const {createProduct} =  useProductStore();
-const handleAddProduct = async() =>{
-	const {success, message} = await createProduct(newProduct);
-	console.log("Success:", success);
-	console.log("Message:", message);
- 
+const handleAddProduct = () =>{
+  console.log(newProduct);
 }
 
 
@@ -48,7 +43,7 @@ const handleAddProduct = async() =>{
 							onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}
 						/>
 
-						<Button background={'linear-gradient(0deg, rgb(76, 91, 159) 10%, rgb(77, 162, 235) 90%)'} onClick={handleAddProduct} w='full'>
+						<Button background={'linear-gradient(90deg, rgba(66,153,225,1) 10%, rgba(43,108,176,1)) 90%)'} onClick={handleAddProduct} w='full'>
 							Add Product
 						</Button>
 					</VStack>

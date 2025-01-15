@@ -1,11 +1,11 @@
 import {Container, Flex, HStack, Text, Button} from '@chakra-ui/react';
 import {Link} from "react-router-dom";
 import { FiPlusSquare } from "react-icons/fi";
-
+import { useProductStore } from '../store/product';
 
 
 const Navbar = () => {
-
+const {products} = useProductStore();
    
   return (
     <Container maxW={"1140px"} px={4}>
