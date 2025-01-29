@@ -5,7 +5,6 @@ import {
   Heading,
   Input,
   VStack,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { useProductStore } from "../store/product";
@@ -50,7 +49,9 @@ const CreatePage = () => {
 
         <Box
           w={"full"}
-          bg={useColorModeValue("gray.60", "gray.700")}
+          background={
+            "linear-gradient(90deg, rgb(229, 231, 234) 10%, rgb(240, 243, 245) 90%)"
+          }
           p={6}
           rounded={"lg"}
           shadow={"md"}

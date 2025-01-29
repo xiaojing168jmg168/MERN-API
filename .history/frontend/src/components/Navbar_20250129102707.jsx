@@ -54,5 +54,5 @@ const Navbar = () => {
     </Container>
   );
 };
-
+console.log("navbar");
 export default Navbar;

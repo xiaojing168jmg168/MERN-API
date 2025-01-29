@@ -50,7 +50,7 @@ const CreatePage = () => {
 
         <Box
           w={"full"}
-          bg={useColorModeValue("gray.60", "gray.700")}
+          bg={useColorModeValue("gray.30", "gray.700")}
           p={6}
           rounded={"lg"}
           shadow={"md"}

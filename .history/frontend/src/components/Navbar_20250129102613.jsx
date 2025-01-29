@@ -40,7 +40,7 @@ const Navbar = () => {
           <Link to={"/create"}>
             <Button
               background={
-                "linear-gradient(60deg, rgb(135, 7, 137) 10%, rgb(237, 48, 130) 90%)"
+                "linear-gradient(90deg, rgb(135, 7, 137) 10%, rgb(237, 48, 130) 90%)"
               }
             >
               <PlusSquareIcon fontSize={20} />
@@ -54,5 +54,5 @@ const Navbar = () => {
     </Container>
   );
 };
-
+console.log("navbar");
 export default Navbar;

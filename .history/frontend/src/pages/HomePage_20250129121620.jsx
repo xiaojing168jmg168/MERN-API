@@ -1,5 +1,5 @@
-import { Container, VStack, Text } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Container, VStack, Text, Link } from "@chakra-ui/react";
+
 const HomePage = () => {
   return (
     <Container maxW="container.x1" py={12}>
@@ -7,12 +7,13 @@ const HomePage = () => {
         <Text
           fontSize={"30"}
           fontWeight={"bold"}
-          bgGradient={"linear(to-l, rgb(135, 7, 137), rgb(237, 48, 130))"}
+          bgGradient={"linear(to-r, rgb(135, 7, 137), rgb(237, 48, 130))"}
           bgClip={"text"}
           textAlign={"center"}
         >
-          Current Product 🚀
-        </Text>
+          Current Product
+        </Text>{" "}
+        🚀
         <Text
           fontSize="x1"
           textAlign={"center"}
@@ -23,7 +24,7 @@ const HomePage = () => {
           <Link to={"/create"}>
             <Text
               as="span"
-              color="blue.600"
+              color="red.800"
               _hover={{ textDecoration: "underline" }}
             >
               Create a product

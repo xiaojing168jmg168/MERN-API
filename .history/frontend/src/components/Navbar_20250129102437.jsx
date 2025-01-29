@@ -39,9 +39,7 @@ const Navbar = () => {
         <HStack spacing={2} alignItems={"center"}>
           <Link to={"/create"}>
             <Button
-              background={
-                "linear-gradient(60deg, rgb(135, 7, 137) 10%, rgb(237, 48, 130) 90%)"
-              }
+              background={"linear(to-r,rgb(135, 7, 137),rgb(237, 48, 130))"}
             >
               <PlusSquareIcon fontSize={20} />
             </Button>
@@ -54,5 +52,5 @@ const Navbar = () => {
     </Container>
   );
 };
-
+console.log("navbar");
 export default Navbar;

@@ -1,5 +1,5 @@
-import { Container, VStack, Text } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Container, VStack, Text, Link } from "@chakra-ui/react";
+
 const HomePage = () => {
   return (
     <Container maxW="container.x1" py={12}>
