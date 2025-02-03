@@ -8,4 +8,4 @@
 
 # Application Deployment
 
-[https://mern-api.onrender.com](https://mern-api.onrender.com)
+[https://mern-api-azut.onrender.com](https://mern-api-azut.onrender.com)
